@@ -54,7 +54,7 @@ input[type="button"], input[type="submit"] {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.5;
   color: #555;
   background: #fff;
@@ -72,6 +72,7 @@ body {
 
 .clearfix {
   zoom: 1;
+  clear: both;
 }
 
 .clearfix:after {
@@ -80,4 +81,116 @@ body {
   display: block;
   height: 0;
   visibility: hidden;
+}
+
+/*navigation btn */
+.menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+
+.not-active {
+  background: url(img/menu.png) 50% 50% no-repeat;
+}
+
+.is-active {
+  background: url(img/close.png) 50% 50% no-repeat;
+}
+
+/*header btns */
+.btn-score {
+  background: #e67e22;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 120%;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.btn-score:hover {
+  background: #c16718;
+}
+
+.btn-about {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #e67e22;
+  border: 1px solid #e67e22;
+  border-radius: 40px;
+  font-size: 120%;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.btn-about:hover {
+  background: #e67e22;
+  color: #fff;
+}
+/*header*/
+header {
+  background-image: url(img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+}
+header .top-header {
+  width: 100%;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+header .top-header .logo {
+  float: left;
+}
+header .top-header .logo img {
+  width: auto;
+  height: 80px;
+}
+header .top-header nav {
+  float: right;
+  margin-top: 20px;
+}
+header .top-header nav ul {
+  list-style: none;
+}
+header .top-header nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+header .top-header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 120%;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+}
+header .top-header nav ul li a:hover {
+  border-bottom: 2px solid #e67e22;
+}
+header .top-header nav ul li .online-score {
+  color: #e67e22;
+}
+header .header-text {
+  display: block;
+  width: 90%;
+  margin-top: 20%;
+  text-align: center;
+}
+header .header-text h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 270%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
