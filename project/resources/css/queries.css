@@ -17,12 +17,12 @@
     .menu-btn {
         display: block;
     }
+    /*header*/
     header {
         min-height: 600px;
         position: relative;
     }
     header .top-header {
-        background: #fff;
         padding: 20px 15px;
     }
     header .top-header .logo img {
@@ -41,32 +41,55 @@
     }
     header .top-header nav ul li a {
         padding: 0 0;
-        color: #555
     }
     
+    header .header-text {
+        margin-top: 30%;
+    }
     header .header-text h1 {
         font-size: 230%;
+    }
+    
+    /*sction-about*/
+    .section-about .about-items .about-item {
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 560px) {
+    body {
+        font-size: 13px;
+    }
+    header {
+        height: 600px;
+    }
+    header .header-text {
+        margin-top: 40%;
+    }
     header .header-text h1 {
         font-size: 140%;
     }
     .btn-score {
         display: block;
+        max-width: 300px;
+        margin: 0 auto;
+        
     }
     .btn-about {
         display: block;
-        margin: 20px 0 10px 0;
+        max-width: 300px;
+        margin: 20px auto 10px auto;
     }
     header .top-header nav {
         float: none;
         width: 100%;
         margin-right: 0;
         margin-left: -15px;
-        background: #fff;
         position: absolute;
-        top: 80px;
+        top: 30px;
+    }
+    /*sction-about*/
+    .section-about .about-items .about-item {
+        width: 100%;
     }
 }

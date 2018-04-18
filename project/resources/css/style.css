@@ -131,14 +131,16 @@ body {
   background: #e67e22;
   color: #fff;
 }
-/*header*/
+
 header {
   background-image: url(img/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 800px;
+  background-attachment: fixed;
+  height: 795px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 header .top-header {
   width: 100%;
@@ -170,19 +172,24 @@ header .top-header nav ul li a {
   font-size: 120%;
   font-weight: 400;
   padding-bottom: 10px;
+  -webkit-border-bottom: 2px solid transparent;
+  -moz-border-bottom: 2px solid transparent;
   border-bottom: 2px solid transparent;
   transition: 0.4s;
 }
 header .top-header nav ul li a:hover {
+  -moz-border-bottom: 2px solid #e67e22;
+  -webkit-border-bottom: 2px solid #e67e22;
   border-bottom: 2px solid #e67e22;
 }
 header .top-header nav ul li .online-score {
   color: #e67e22;
 }
 header .header-text {
-  display: block;
-  width: 90%;
-  margin-top: 20%;
+  position: absolute;
+  top: 50%;
+  margin-top: 17%;
+  width: 1170px;
   text-align: center;
 }
 header .header-text h1 {
@@ -193,4 +200,78 @@ header .header-text h1 {
   word-spacing: 4px;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+.section-about {
+  padding: 20px 0;
+}
+.section-about h2 {
+  font-weight: 300;
+  font-size: 200%;
+  text-align: center;
+}
+.section-about h2:after {
+  content: "";
+  background-color: #e67e22;
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.section-about .about-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-about .about-items .about-item {
+  width: 25%;
+  text-align: center;
+  padding: 10px 30px;
+}
+.section-about .about-items .about-item img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+.section-about .about-items .about-item a {
+  display: block;
+  color: #555;
+  padding: 0 20px;
+}
+.section-about .about-items .about-item a:hover {
+  color: #e67e22;
+}
+.section-about .about-items .about-item p {
+  font-size: 80%;
+}
+.section-about .gallery {
+  margin: 0;
+  padding: 0;
+}
+.section-about .gallery ul {
+  padding: 0;
+}
+.section-about .gallery ul li {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: -2px 0;
+  overflow: hidden;
+  background: #000;
+}
+.section-about .gallery ul li img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transition: 0.4s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.section-about .gallery ul li img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
 }
