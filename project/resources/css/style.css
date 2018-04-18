@@ -83,6 +83,21 @@ body {
   visibility: hidden;
 }
 
+h2 {
+  font-weight: 300;
+  font-size: 200%;
+  text-align: center;
+}
+h2:after {
+  content: "";
+  background-color: #e67e22;
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 /*navigation btn */
 .menu-btn {
   position: absolute;
@@ -203,21 +218,7 @@ header .header-text h1 {
 }
 
 .section-about {
-  padding: 20px 0;
-}
-.section-about h2 {
-  font-weight: 300;
-  font-size: 200%;
-  text-align: center;
-}
-.section-about h2:after {
-  content: "";
-  background-color: #e67e22;
-  display: block;
-  width: 100px;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 30px;
+  padding: 20px 0 0 0;
 }
 .section-about .about-items {
   display: flex;
@@ -274,4 +275,72 @@ header .header-text h1 {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.section-order {
+  margin-top: -13px;
+  padding: 40px 0;
+  background: #f4f4f4;
+  position: reletive;
+}
+.section-order .left {
+  text-align: left;
+  padding-bottom: 70px;
+}
+.section-order .order-item {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+.section-order .order-item a.order-btn {
+  width: 270px;
+  margin: 80px 0 0 60px;
+  background: #e67e22;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 40px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.section-order .order-item a.order-btn:hover {
+  background: #b46927;
+  color: #fff;
+}
+.section-order .order-item img {
+  width: 220px;
+}
+.section-order .order-item ul {
+  text-align: left;
+  list-style: none;
+}
+.section-order .order-item ul li {
+  margin: 37px 0 37px 20px;
+}
+.section-order .order-item ul li p {
+  margin: 10px 20px 0 0;
+  width: 400px;
+}
+.section-order .order-item ul li p a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+.section-order .order-item ul li p a:hover {
+  color: #e67e22;
+}
+.section-order .order-item ul li p.num {
+  margin-top: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  float: left;
+  -webkit-border: 2px solid #e67e22;
+  -moz-border: 2px solid #e67e22;
+  border: 2px solid #e67e22;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
 }
