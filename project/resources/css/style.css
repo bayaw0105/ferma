@@ -331,6 +331,8 @@ header .header-text h1 {
 }
 .section-order .order-item ul li p.num {
   margin-top: 0;
+  color: #e67e22;
+  font-size: 130%;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -342,5 +344,44 @@ header .header-text h1 {
   -moz-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
+  line-height: 45px;
+}
+
+.section-contacts {
+  background: #fff;
+  padding: 20px 0 20px 0;
+}
+.section-contacts .contact-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-contacts .contact-items .contact-item {
+  width: 33.3%;
+  position: relative;
+}
+.section-contacts .contact-items .contact-item img {
+  width: 35px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.section-contacts .contact-items .contact-item ul {
+  list-style: none;
+  padding-left: 60px;
+}
+.section-contacts .contact-items .contact-item ul li {
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.section-contacts .contact-items .contact-item ul li:hover {
+  color: #e67e22;
+}
+.section-contacts .contact-items .contact-item ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+.section-contacts .contact-items .contact-item ul li a:hover {
+  color: #e67e22;
 }
