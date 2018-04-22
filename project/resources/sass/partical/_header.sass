@@ -49,6 +49,7 @@ header
     margin: 0
     padding: 0
     position: relative
+    z-index: 13
     .top-header
         width: 100%
         padding: 20px 0 0 0
@@ -83,6 +84,48 @@ header
                             border-bottom: 2px solid $orange-color
                     .online-score
                             color: $orange-color
+    .top-header-white
+        width: 100%
+        padding: 10px 0 5px 0
+        position: fixed
+        font-size: 90%
+        background: #fff
+        transition: .5s
+        -webkit-box-shadow: 0px 0px 3px 2px rgba(219,216,219,1)
+        -moz-box-shadow: 0px 0px 3px 2px rgba(219,216,219,1)
+        box-shadow: 0px 0px 3px 2px rgba(219,216,219,1)
+        z-index: 9999
+        .logo
+            float: left
+            img
+                width: auto
+                height: 50px
+        nav
+            float: right
+            margin-top: 0
+            ul
+                list-style: none
+                li
+                    display: inline-block
+                    margin-left: 40px
+                    a
+                        text-decoration: none
+                        text-transform: uppercase
+                        color: #555
+                        font-size: 110%
+                        font-weight: 400
+                        padding-bottom: 10px
+                        -webkit-border-bottom: 2px solid transparent
+                        -moz-border-bottom: 2px solid transparent
+                        border-bottom: 2px solid transparent
+                        transition: .3s
+                        &:hover
+                            -moz-border-bottom: 2px solid $orange-color
+                            -webkit-border-bottom: 2px solid $orange-color
+                            border-bottom: 2px solid $orange-color
+                    .online-score
+                            color: $orange-color
+        
     .header-text
         position: absolute
         top: 50%

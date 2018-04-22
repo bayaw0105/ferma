@@ -1,16 +1,15 @@
-   
 body 
     font-family: 'Open Sans', sans-serif
     font-size: 16px
     line-height: 1.5
     color: #555
     background: #fff
-    min-width: 360px
+    min-width: 300px /*360 */
 
 .container
     width: 100%
     max-width: 1170px
-    min-width: 360px
+    min-width: 300px /*360 */
     margin: 0 auto
     position: relative
     box-sizing: border-box
@@ -37,3 +36,25 @@ h2
                 height: 2px
                 margin: 0 auto
                 margin-top: 30px
+
+a.top
+    position: fixed
+    right: -100px
+    bottom: 20px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: $orange-color
+    text-align: center
+    line-height: 45px
+    transition: 1s
+    z-index: 12
+    opacity: .8
+    &:hover
+        opacity: 1
+.active
+    transition: 1s
+    z-index: 9999
+    left: 95%
+    img
+        width: 20px

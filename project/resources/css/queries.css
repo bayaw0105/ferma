@@ -1,4 +1,7 @@
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1170px) {
+    .active {
+        left: 95%;
+    }
     header .top-header {
         padding: 0 15px
     }
@@ -7,15 +10,20 @@
         padding: 0 15px;
     }
 }
+
 @media screen and (min-width:900px) {
     header .top-header nav {
         display: block !important;
     }
+    
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .menu-btn {
         display: block;
+    }
+    .active {
+        left: 90%;
     }
     /*header*/
     header {
@@ -27,7 +35,7 @@
     }
     header .top-header .logo img {
         height: 60px;
-        
+
     }
     header .top-header nav {
         display: none;
@@ -42,14 +50,23 @@
     header .top-header nav ul li a {
         padding: 0 0;
     }
-    
+
     header .header-text {
         margin-top: 30%;
     }
     header .header-text h1 {
-        font-size: 230%;
+        font-size: 210%;
     }
-    
+    /*header white*/
+    header .top-header-white {
+        padding: 10px ;
+    }
+    header .top-header-white .menu-btn{
+        top: 10px
+    }
+    header .top-header-white .logo img {
+        height: 50px;
+    }
     /*sction-about*/
     .section-about .about-items .about-item {
         width: 50%;
@@ -67,29 +84,61 @@
     .section-order .order-item a.order-btn {
         margin: 10px 0 0 0;
     }
-    .section-order .order-item ul{
+    .section-order .order-item ul {
         padding: 0;
         margin: 0;
     }
     .section-order .order-item ul li p {
-  margin: 10px 20px 0 0;
-  width: 100%;
+        margin: 10px 20px 0 0;
+        width: 100%;
     }
-    
+
+    /*footer*/
+    footer .footer-items .footer-item {
+        width: 48%;
+    }
+    footer .footer-items .footer-item:first-child {
+        display: none;
+
+    }
 
 }
 
 @media screen and (max-width: 800px) {
+
+    /*about*/
+    .section-about .gallery ul li {
+        width: 50%;
+        margin: -11px 0;
+    }
+    .section-about .gallery ul li img  {
+        opacity: 1;
+    }
+    .section-about .gallery ul li.none {
+        display: none;
+    }
+    .section-about .about-items .about-item p {
+        font-size: 100%;
+    }
+    .section-about .about-items .about-item a {
+        font-size: 120%;
+    }
     /*section-order*/
+    .section-order {
+        padding: 20px 0 0 0;
+    }
+    .section-order .order-item  {
+        padding:  10px 0;
+    }
     .section-order .order-item ul li {
-     margin: 10px 0 10px 20px;
-}
+        margin: 10px 0 10px 20px;
+    }
     .section-order .order-item ul li p.num {
         width: 40px;
         height: 40px;
         line-height: 37px;
     }
-    
+
     /*section-contacts*/
     .section-contacts .contact-items .contact-item {
         width: 90%;
@@ -102,17 +151,20 @@
     .section-contacts .contact-items .contact-item ul {
         margin-top: 15px;
     }
+    /*footer*/
+    footer .footer-items .footer-item {
+        width: 90%;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 560px) {
-    body {
-        font-size: 13px;
-    }
+    
     header {
-        height: 600px;
+        min-height: 550px;
     }
     header .header-text {
-        margin-top: 40%;
+        margin-top: 34%;
     }
     header .header-text h1 {
         font-size: 140%;
@@ -121,12 +173,16 @@
         display: block;
         max-width: 300px;
         margin: 0 auto;
-        
+
     }
     .btn-about {
         display: block;
         max-width: 300px;
         margin: 20px auto 10px auto;
+    }
+    header .top-header .logo img {
+        height: 50px;
+        
     }
     header .top-header nav {
         float: none;
@@ -135,9 +191,57 @@
         margin-left: -15px;
         position: absolute;
         top: 30px;
+        
+    }
+    a.menu-btn {
+        top: 15px
+    }
+    /*top-header-white*/
+    header .top-header-white {
+        padding: 5px 0;
+    }
+    header .top-header-white .logo img {
+        margin-left: 5px
+    }
+    header .top-header-white nav {
+        float: none;
+        background: #fff;
+        width: 105%;
+        top: 50px;
+        margin-left: 0;
+        left: -10px;
+        
     }
     /*sction-about*/
     .section-about .about-items .about-item {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .active {
+        left: 85%;
+    }
+    header {
+        height: 250px;
+    }
+    header .top-header {
+        padding: 5px;
+    }
+    header .top-header nav  {
+        margin-top: 4px;
+    }
+   
+
+    header .header-text {
+        margin-top: 34%;
+    }
+    
+    .section-contacts {
+        padding-top: 0;
+    }
+    
+    footer {
+        padding: 20px 0 10px 0;
     }
 }
