@@ -74,8 +74,34 @@
     .section-order .order-item ul li p {
   margin: 10px 20px 0 0;
   width: 100%;
+    }
+    
+
 }
 
+@media screen and (max-width: 800px) {
+    /*section-order*/
+    .section-order .order-item ul li {
+     margin: 10px 0 10px 20px;
+}
+    .section-order .order-item ul li p.num {
+        width: 40px;
+        height: 40px;
+        line-height: 37px;
+    }
+    
+    /*section-contacts*/
+    .section-contacts .contact-items .contact-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section-contacts .contact-items .contact-item img {
+        width: 30px;
+        top: 10px;
+    }
+    .section-contacts .contact-items .contact-item ul {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 560px) {

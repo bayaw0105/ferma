@@ -12,5 +12,22 @@ $(document).ready(function () {
         }
     });
     
+    /*google map*/
+    
+    var map = new GMaps({
+        div: '.map',
+        lat: 42.8754806,
+        lng: 74.5886487
+    });
+    
+    map.addMarker({
+        lat: 42.8754806,
+        lng: 74.5886487,
+        title: 'Title text',
+        infoWindow: {
+            content: '<p>Title text</p>'
+        }
+    });
+    
 
 })
