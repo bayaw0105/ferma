@@ -229,9 +229,14 @@
         padding: 5px;
     }
     header .top-header nav  {
+            margin-top: -28px;
+    }
+    header .top-header-white nav {
         margin-top: 4px;
     }
-   
+    header .top-header-white nav ul li {
+        margin-left: -20px;
+    }
 
     header .header-text {
         margin-top: 34%;
